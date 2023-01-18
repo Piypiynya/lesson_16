@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson_16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__text">
+					<p>Я шапка</p>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__main">
+				<div class="page__container">
+					<div class="page__block">
+						<div class="page__title">
+							<h1>FORM</h1>
+						</div>
+						<form method="post" action="https://jsonplaceholder.typicode.com/posts" class="form" enctype="multipart/form-data">
+							<div class="form__items">
+								<div class="form__item">
+									<label for="name-01" class="form__label">Write your full name</label>
+									<input type="text" name="name" placeholder="Your full name" required autocomplete="off" id="name-01">
+								</div>
+
+								<div class="form__item">
+									<label for="mail-01" class="form__label">Write your e-mail</label>
+									<input type="email" name="mail" placeholder="Your e-mail" required autocomplete="off" id="mail-01">
+								</div>
+
+								<div class="form__item">
+									<label for="tel-01" class="form__label">Write your phone number</label>
+									<input type="tel" name="tel" placeholder="Your phone number" required autocomplete="off" id="tel-01">
+								</div>
+
+								<div class="form__item">
+									<label for="pass-01" class="form__label">Write your pussword</label>
+									<input type="password" name="pass" placeholder="Your password" required autocomplete="off" id="pass-01">
+								</div>
+
+								<div class="form__item">
+									<label for="numb-01" class="form__label">Write your number</label>
+									<input type="number" name="number" placeholder="Your number" required autocomplete="off" id="numb-01">
+								</div>
+
+								<div class="form__item">
+									<label for="col-01" class="form__label">Your color</label>
+									<input type="color" value="#FABF9F" name="color" placeholder="Your color" required autocomplete="off" id="col-01">
+								</div>
+
+								<div class="form__item">
+									<label for="search-01" class="form__label">Search</label>
+									<input type="search" name="search" placeholder="Search" required autocomplete="off" id="search-01">
+								</div>
+
+								<div class="form__item">
+									<label for="date-01" class="form__label">Date</label>
+									<input type="date" name="date" placeholder="Date" required autocomplete="off" id="date-01">
+								</div>
+
+								<div class="form__item">
+									<input type="range" name="range" required autocomplete="off" >
+								</div>
+
+								<div class="form__item">
+									<div class="form__checkbox checkbox">
+										<input id="check" class="checkbox__input" type="checkbox" name="check">
+										<label class="checkbox__label" for="check-01"><span class="checkbox__text">Do you have a computer?</span></label>
+								  </div>
+								</div>
+
+								<div class="form__item ">
+									<div class="form__title">
+										<h4>Do you have children?</h4>
+									</div>
+									<div class="form__radio">
+										<input type="radio" class="form__input-radio" id="child" name="child" value="yes">
+										<label for="child" class="form__label radio-label"><span class="radio-label__text">YES</span></label>
+									</div>
+									<div class="form__radio">
+										<input type="radio" class="form__input-radio" id="child-no" name="child" value="no">
+										<label for="child-no" class="form__label radio-label"><span class="radio-label__text">NO</span></label>
+									</div>
+								</div>
+
+								<div class="form__item">
+									<input type="file" class="form__input file" name="file" multiple accept="image/png, image/jpeg, image/svg">
+								</div>
+
+								<div class="form__item">
+									<textarea  class="form__area" name="massage" autocomplete="off" ></textarea>
+								</div>
+
+								<div class="form__item">
+									<button type="submit" class="form__button">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__form form" >
+				<div class="form__container">
+					<div class="form__block column">
+						<div class="column__media">
+							<img src="img/illustration.svg" alt="illustration">
+						</div>
+						<div class="column__form">
+							<div class="column__title">
+								<h6>Any questions?</h6>
+								<h2>Drop us a line</h2>
+							</div>
+							<form action="https://jsonplaceholder.typicode.com/posts" class="form-info" method="post" enctype="multipart/form-data">
+								<div class="form-info__person">
+									<div class="form-info__line">
+										<label for="name-01" class="form-label-info">First Name*</label>
+										<input type="text" class="form-info" name="first name" placeholder="Your first name" required id="name-01">
+									</div>
+									<div class="form-info__line">
+										<label for="name-02" class="form-label-info">Last  Name*</label>
+										<input type="text" class="form-info" name="last name" placeholder="Your last name" required id="name-02">
+									</div>
+								
+									<div class="form-info__line">
+										<label for="mail-01" class="form-label-info">Email*</label>
+										<input type="email" class="form-info" name="mail" placeholder="Your working email" required id="mail-01">
+									</div>
+									<div class="form-info__line">
+										<label for="phone-01" class="form-label-info">Phone</label>
+										<input type="tel" class="form-info" name="phone" placeholder="Your phone number" required id="phone-01">
+									</div>
+									<div class="form-info__line">
+										<textarea  class="form__area" name="massage" autocomplete="off" placeholder="Your message"></textarea>
+									</div>
+								</div>
+									
+								
+								<div class="form-info__actions">
+										<div class="form__checkbox checkbox-info">
+											<input id="chec" class="checkbox__input-info" type="checkbox" name="check">
+											<label class="checkbox__label-info" for="chec"><span class="checkbox__text-info">I agree to receive communications from Createx Online School</span></label>
+									  </div>
+									  <div class="button-sub">
+											<button type="submit" class="button-sub__item">Send message</button>
+									  </div> 
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
